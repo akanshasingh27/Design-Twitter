@@ -11,7 +11,7 @@ void follow(int followerId, int followeeId) The user with ID followerId started 
 void unfollow(int followerId, int followeeId) The user with ID followerId started unfollowing the user with ID followeeId.
  
 
-Example 1:
+## Example 1:
 
 Input
 ["Twitter", "postTweet", "getNewsFeed", "follow", "postTweet", "getNewsFeed", "unfollow", "getNewsFeed"]
@@ -19,7 +19,7 @@ Input
 Output
 [null, null, [5], null, null, [6, 5], null, [5]]
 
-Explanation
+###### Explanation
 Twitter twitter = new Twitter();
 twitter.postTweet(1, 5); // User 1 posts a new tweet (id = 5).
 twitter.getNewsFeed(1);  // User 1's news feed should return a list with 1 tweet id -> [5]. return [5]
